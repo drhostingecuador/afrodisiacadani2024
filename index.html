@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afrodisiaca Dani | Tu Escort Preferida</title>
+  <link rel="icon" type="image/png"
+    href="https://imagedelivery.net/WgyotPHiBAuJc-a7p1ngew/f8d48797-fc64-4ef0-4229-81b4c731ff00/public">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable class-based dark mode
+      theme: {
+        extend: {
+          colors: {
+            primary: '#CB72E9', // Updated primary color
+            secondary: '#f9f5f1', // Light beige background
+            textDark: '#333333',
+            // Dark Mode colors
+            darkBg: '#0f0f0f',
+            darkSurface: '#1a1a1a',
+            darkText: '#f3f4f6',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Lato"', 'sans-serif'],
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            slideUp: 'slideUp 1s ease-out forwards',
+            slideUpDelay: 'slideUp 1s ease-out 0.3s forwards',
+          }
+        }
+      }
+    }
+  </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+
+<body class="bg-secondary text-textDark antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
