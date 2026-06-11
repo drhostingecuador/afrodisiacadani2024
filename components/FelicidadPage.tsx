@@ -5,16 +5,18 @@ const FelicidadPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const images = [
-    "/felicidad-gallery/felicidad-1.jpg",
-    "/felicidad-gallery/felicidad-2.jpg",
-    "/felicidad-gallery/felicidad-3.jpg",
-    "/felicidad-gallery/felicidad-4.jpg",
-    "/felicidad-gallery/felicidad-5.jpg",
-    "/felicidad-gallery/felicidad-6.jpg",
-    "/felicidad-gallery/felicidad-7.jpg",
-    "/felicidad-gallery/felicidad-8.jpg",
-    "/felicidad-gallery/felicidad-9.jpg",
-    "/felicidad-gallery/felicidad-10.jpg",
+    "/fergie-gallery/1a3780e9-8161-420c-80bf-5fa76d09209d.jpeg",
+    "/fergie-gallery/42b81520-0574-47a5-a698-c21738fecf29.jpeg",
+    "/fergie-gallery/4961058922399730741.jpg",
+    "/fergie-gallery/4961058922399730754.jpg",
+    "/fergie-gallery/4961058922399730816.jpg",
+    "/fergie-gallery/4967823199538187504.jpg",
+    "/fergie-gallery/4972325076883672663.jpg",
+    "/fergie-gallery/4972325076883672664.jpg",
+    "/fergie-gallery/4972325076883672708.jpg",
+    "/fergie-gallery/4974576876697357523.jpg",
+    "/fergie-gallery/bf673fa5-cfe8-479e-899b-ee1e3583fab6.jpeg",
+    "/fergie-gallery/ea4ecbb0-5eac-4e9f-b37a-5b17bcb61645.jpeg"
   ];
 
   return (
@@ -22,13 +24,13 @@ const FelicidadPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
         <img
-          src="/felicidad-hero-alt.png"
-          alt="Felicidad Banner"
+          src="/portada.png"
+          alt="Fergie Banner"
           className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-widest mb-4 animate-slideUp">FELICIDAD</h1>
+            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-widest mb-4 animate-slideUp">FERGIE</h1>
             <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
           </div>
         </div>
@@ -37,10 +39,10 @@ const FelicidadPage: React.FC = () => {
       {/* Bio Section */}
       <section id="about" className="max-w-4xl mx-auto py-16 md:py-24 px-6 text-center space-y-8 transition-colors duration-300">
         <h2 className="text-3xl md:text-4xl font-serif text-primary uppercase tracking-wide">
-          Soy Felicidad
+          Soy Fergie
         </h2>
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg md:text-xl">
-          Felicidad es una chica preciosa con sus 1.40 cm de altura, se adapta a tu necesidad, manejable y delicada, dispuesta a complacerte.
+          Fergie como te gusta una mujer completa, blanca y alta, dispuesta a complacerte.
         </p>
 
         {/* Content Grid: Services/Schedule and Video */}
@@ -87,12 +89,12 @@ const FelicidadPage: React.FC = () => {
               
               {/* Screen */}
               <div className="rounded-[2rem] overflow-hidden w-full h-full bg-black">
-                <iframe
-                  src="https://customer-ei41x2d1k43y7dmw.cloudflarestream.com/5bd217443e86461c6f0ee62d1b4d0e9b/iframe?poster=https%3A%2F%2Fcustomer-ei41x2d1k43y7dmw.cloudflarestream.com%2F5bd217443e86461c6f0ee62d1b4d0e9b%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-                  className="w-full h-full"
-                  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
-                  allowFullScreen
-                ></iframe>
+                <video
+                  src="/videofer.MOV"
+                  className="w-full h-full object-cover"
+                  controls
+                  playsInline
+                ></video>
               </div>
             </div>
           </div>
@@ -103,7 +105,7 @@ const FelicidadPage: React.FC = () => {
       <section id="gallery" className="bg-white dark:bg-darkBg py-16 px-6 transition-colors duration-300">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-serif text-primary text-center mb-12 uppercase">
-            Galería de Felicidad
+            Galeria de Fergie
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {images.map((src, idx) => (
@@ -112,7 +114,7 @@ const FelicidadPage: React.FC = () => {
                 className="aspect-[3/4] overflow-hidden rounded-md shadow-sm hover:opacity-90 transition cursor-pointer group dark:bg-darkSurface border border-transparent dark:border-white/5"
                 onClick={() => setSelectedImage(src)}
               >
-                <img src={src} alt={`Felicidad ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 dark:opacity-80 group-hover:dark:opacity-100" />
+                <img src={src} alt={`Fergie ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 dark:opacity-80 group-hover:dark:opacity-100" />
               </div>
             ))}
           </div>
@@ -143,7 +145,7 @@ const FelicidadPage: React.FC = () => {
       {/* Call to Action */}
       <section className="bg-primary dark:bg-darkSurface text-white py-16 text-center border-t border-transparent dark:border-white/5 transition-colors duration-300">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-serif mb-6 drop-shadow-sm">¿Te gustaría una cita con Felicidad?</h2>
+          <h2 className="text-2xl md:text-3xl font-serif mb-6 drop-shadow-sm">¿Te gustaría una cita con Fergie?</h2>
           <p className="mb-8 opacity-90 dark:text-gray-300">Contáctanos para agendar un encuentro exclusivo.</p>
           
           <a

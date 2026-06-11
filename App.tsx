@@ -50,10 +50,10 @@ const App: React.FC = () => {
             <Services />
             <Gallery />
             <FriendPromo 
-              title="Les presento a mi amiga Felicidad"
-              description="Felicidad es una chica preciosa con sus 1.40 cm de altura, se adapta a tu necesidad, manejable y delicada, dispuesta a complacerte."
-              image="/felicidad.jpg"
-              buttonText="Ver perfil de Felicidad"
+              title="La hermosa Fergie ya con nosotras"
+              description="Fergie como te gusta una mujer completa, blanca y alta, dispuesta a complacerte."
+              image="/fergie-amarillo.jpeg"
+              buttonText="VER PERFIL DE FERGIE"
               onNavigate={() => navigateTo('felicidad')} 
             />
             <FriendPromo 
