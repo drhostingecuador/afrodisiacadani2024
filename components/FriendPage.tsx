@@ -71,10 +71,10 @@ const FriendPage: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
             {[
-              "80f634f5e532ff481a72a718476e3b00",
-              "e436b319fa2f3eb3636ca268f8f7fb57",
-              "9375be80ed01ebcc729c789742671387"
-            ].map((videoId, idx) => (
+              "/thalia-videos/video1.mp4",
+              "/thalia-videos/video2.mp4",
+              "/thalia-videos/video3.mp4"
+            ].map((videoSrc, idx) => (
               <div key={idx} className="relative w-full max-w-[280px]">
                 {/* Smartphone Frame */}
                 <div className="relative w-full bg-[#111] rounded-[2.5rem] p-2.5 shadow-2xl border-[4px] border-[#222] group hover:scale-[1.02] transition-transform duration-500">
@@ -87,12 +87,14 @@ const FriendPage: React.FC = () => {
 
                   {/* Internal Screen Container */}
                   <div className="relative w-full overflow-hidden rounded-[1.8rem] bg-black" style={{ paddingTop: '177.77%' }}>
-                    <iframe
-                      src={`https://customer-ei41x2d1k43y7dmw.cloudflarestream.com/${videoId}/iframe?preload=true&muted=true&loop=true`}
-                      className="absolute top-0 left-0 w-full h-full border-0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
+                    <video
+                      src={videoSrc}
+                      className="absolute top-0 left-0 w-full h-full border-0 object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    ></video>
 
                     {/* Watermark Logo */}
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-10 group-hover:opacity-25 transition-opacity duration-500 z-10">
