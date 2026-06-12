@@ -73,7 +73,7 @@ const FriendPage: React.FC = () => {
             {[
               "/thalia-videos/video1_new.mp4",
               "/thalia-videos/video2.mp4",
-              "/thalia-videos/video3_new.mp4"
+              "/thalia-videos/video200.MOV"
             ].map((videoSrc, idx) => (
               <div key={idx} className="relative w-full max-w-[280px]">
                 {/* Smartphone Frame */}
