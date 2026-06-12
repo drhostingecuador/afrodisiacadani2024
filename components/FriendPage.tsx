@@ -72,7 +72,7 @@ const FriendPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
             {[
               "/thalia-videos/video1_new.mp4",
-              "/thalia-videos/video2_new.mp4",
+              "/thalia-videos/ducha.mp4",
               "/thalia-videos/video200.MOV"
             ].map((videoSrc, idx) => (
               <div key={idx} className="relative w-full max-w-[280px]">
