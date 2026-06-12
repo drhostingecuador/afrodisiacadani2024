@@ -71,7 +71,7 @@ const FriendPage: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
             {[
-              "/thalia-videos/video1.mp4",
+              "/thalia-videos/video1_new.mp4",
               "/thalia-videos/video2.mp4",
               "/thalia-videos/video3.mp4"
             ].map((videoSrc, idx) => (
