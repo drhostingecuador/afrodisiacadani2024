@@ -78,13 +78,14 @@ const Services: React.FC = () => {
 
             {/* Internal Screen Container */}
             <div className="relative w-full overflow-hidden rounded-[2.2rem] bg-black" style={{ paddingTop: '210.8181818181818%' }}>
-              <iframe
-                src="https://customer-ei41x2d1k43y7dmw.cloudflarestream.com/efd8310002150e62ac992a0cf5f65ca5/iframe?poster=https%3A%2F%2Fcustomer-ei41x2d1k43y7dmw.cloudflarestream.com%2Fefd8310002150e62ac992a0cf5f65ca5%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D15s%26height%3D600&startTime=15s&autoplay=true&muted=true&loop=true"
+              <video
+                src="/IMG_6500.MOV"
                 className="absolute top-0 left-0 w-full h-full border-0 object-cover"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
+                autoPlay
+                muted
+                loop
+                playsInline
+              ></video>
 
               {/* Watermark Logo */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 group-hover:opacity-40 transition-opacity duration-500 z-10">
